@@ -15,11 +15,13 @@ public class AboutMe {
 
         System.out.println("Qual é a sua idade: ");
         int idade = scanner.nextInt();
+        scanner.nextLine(); // Consome a quebra de linha pendente após nextInt()
 
         System.out.println("Digite a sua altura em metros: ");
         double altura = scanner.nextDouble();
+        scanner.nextLine(); // Consome a quebra de linha pendente após nextDouble()
 
-        System.out.println("Olá, me chamo " + nome + " " + sobrenome);
+        System.out.println("Olá, me chamo " + nome + " " + sobrenome + ".");
         System.out.println("Tenho " + idade + " anos.");
         System.out.println("Minha altura é " + altura + " m.");
 
