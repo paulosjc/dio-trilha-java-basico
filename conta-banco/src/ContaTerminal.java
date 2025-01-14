@@ -1,9 +1,10 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class ContaTerminal {
     public static void main(String[] args) throws Exception {
         //TO-DO: conhecer e importar a classe Scanner
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in).useLocale(Locale.forLanguageTag("pt-BR"));
         //TO-DO: Exibir as mensagens para o nosso usuário
         //TO-DO: Obter via Scanner os valores digitados no terminal
         System.out.println("Qual é o seu primeiro nome? ");
